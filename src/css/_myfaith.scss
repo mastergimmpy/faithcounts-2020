@@ -1,0 +1,50 @@
+.faithcounts-page-title-light-block {
+  .main-page-title {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 100;
+    margin-bottom: 3px;
+    margin-top: 27px;
+  }
+  .fourth {
+    max-width: 341px;
+  }
+}
+.narrow-container {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  @media (max-width: $large-width) {
+    max-width: 100%;
+    padding: 0 10.5%;
+  }
+  @media (max-width: $medium-width) {
+    padding: 0 20px;
+  }
+  p {
+    line-height: 28px;
+    &.section-callout {
+      font-size: 34px;
+      line-height: 41px;
+      font-weight: 300;
+      border-top: 1px solid #979797;
+      border-bottom: 1px solid #979797;
+      padding: 15px 0;
+      text-align: center;
+      margin: 41px 0 33px;
+      letter-spacing: -1px;
+    }
+  }
+  img {
+    margin-bottom: 25px;
+  }
+  strong {
+    font-weight: 700;
+  }
+}
+.myfaith-image {
+  margin-bottom: 30px;
+  max-width: 414px;
+  .spacer {
+    padding-top: 100%;
+  }
+}

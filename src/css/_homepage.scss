@@ -1,0 +1,476 @@
+.searchform-wrapper {
+  margin-top: 3%;
+}
+#searchform {
+  position: relative;
+  max-width: 912px;
+  margin: 5% auto 0;
+  input[type="text"] {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ededed;
+    font-size: 56px;
+    line-height: 41px;
+    font-weight: 700;
+    height: 58px;
+    @media (max-width: $medium-width) {
+      font-size: 42px;
+    }
+    @media (max-width: $medium-width) {
+      font-size: 32px;
+    }
+    &::placeholder {
+      font-size: 56px;
+      line-height: 41px;
+      font-weight: 700;
+      color: #ededed;
+      @media (max-width: $medium-width) {
+        font-size: 42px;
+      }
+      @media (max-width: $medium-width) {
+        font-size: 32px;
+      }
+    }
+  }
+  input[type="submit"] {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    border: 0;
+    cursor: pointer;
+    width: 19px;
+    height: 20px;
+    background: url("../img/search.svg") no-repeat center/contain;
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .slide-title {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .post-slide {
+    width: 31.833%;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 0.75%;
+    margin-left: 0.75%;
+    margin-bottom: 31px;
+    color: #000;
+    display: block;
+    position: relative;
+    flex-shrink: 0;
+    &.hiddenBlock {
+      display: none;
+    }
+    @media (max-width: $medium-width) {
+      width: 48.5%;
+      &:nth-of-type(odd) {
+        margin-right: 0.75%;
+        margin-left: 0;
+      }
+      &:nth-of-type(even) {
+        margin-left: 0.75%;
+        margin-right: 0;
+      }
+    }
+  }
+  .slide-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+    position: relative;
+    .spacer {
+      padding-top: 48.661%;
+    }
+    &.video-icon {
+      &:after {
+        content: "";
+        width: 44px;
+        height: 40px;
+        background-image: url(../img/tab-film.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+    }
+    &.reading-icon {
+      &:after {
+        content: "";
+        width: 44px;
+        height: 40px;
+        background-image: url(../img/tab-reading.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+    }
+    &.mic-icon {
+      &:after {
+        content: "";
+        width: 44px;
+        height: 40px;
+        background-image: url(../img/tab-mic.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+    }
+    &.download-icon {
+      &:after {
+        content: "";
+        width: 44px;
+        height: 40px;
+        background-image: url(../img/tab-download.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+    }
+    &.series-image {
+      width: 250px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 23px;
+      .spacer {
+        padding-top: 100%;
+      }
+    }
+    &.sharables-image {
+      &:after {
+        content: "";
+        width: 44px;
+        height: 40px;
+        background-image: url(../img/tab-sharable.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+      /* .spacer{
+                padding-top:100%;
+            } */
+    }
+    &.portrait-image {
+      margin-bottom: 0;
+      .spacer {
+        padding-top: 180.555%;
+      }
+    }
+    &.resources-image {
+      .spacer {
+        padding-top: 100%;
+      }
+    }
+  }
+}
+.filter-wrapper {
+  display: flex;
+  max-width: 780px;
+  margin: 10.4% auto 5%;
+  @media (max-width: $large-width) {
+    max-width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: $medium-width) {
+    flex-direction: column;
+  }
+  @media (max-width: $medium-width) {
+    &.has-selection {
+      .single-filter {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+  @media (min-width: $medium-width-up) {
+    #filters-btn {
+      display: none;
+    }
+  }
+  .single-filter {
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid #ededed;
+    margin-right: 9%;
+    padding: 18px 20px 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+    transition: color 0.2s ease;
+    background-color: #fff;
+    color: #757575;
+    cursor: pointer;
+    @media (max-width: $large-width) {
+      margin-right: 7%;
+    }
+    @media (max-width: $medium-width) {
+      margin-right: 4%;
+    }
+    @media (max-width: $medium-width) {
+      margin-right: 0;
+      width: 100%;
+      display: block;
+      padding: 4px;
+      position: relative;
+      text-align: left;
+      height: 68px;
+      border: 1px solid #fff;
+    }
+    &.active {
+      color: #fff;
+      transition: color 0.2s ease;
+      .filter-title {
+        font-weight: 700;
+      }
+      .filter-count {
+        color: #fff;
+      }
+      @media (max-width: $medium-width) {
+        display: block;
+        color: #757575;
+        border: 1px solid #ededed;
+        .filter-icon-circle {
+          border: 1px solid #979797;
+        }
+        .filter-title {
+          color: #757575;
+        }
+        .filter-count {
+          color: #000;
+        }
+        .video-filter {
+          background: url("../img/film-white.svg") center no-repeat;
+        }
+        .article-filter {
+          background: url("../img/reading-white.svg") center no-repeat;
+        }
+        .sharable-filter {
+          background: url("../img/sharable-white.svg") center no-repeat;
+        }
+        .podcast-filter {
+          background: url("../img/mic-white.svg") center no-repeat;
+        }
+        .download-filter {
+          background: url("../img/download-white.svg") center no-repeat;
+        }
+      }
+    }
+    &#video-btn {
+      &:hover {
+        background-color: rgba(37, 107, 102, 0.5);
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+        }
+      }
+      &.active {
+        background-color: #256b66;
+        transition: background-color 0.2s ease;
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+          .filter-icon-circle {
+            background-color: #256b66;
+          }
+        }
+      }
+    }
+    &#article-btn {
+      &:hover {
+        background-color: rgba(201, 185, 131, 0.5);
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+        }
+      }
+      &.active {
+        background-color: #c9b983;
+        transition: background-color 0.2s ease;
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+          .filter-icon-circle {
+            background-color: #c9b983;
+          }
+        }
+      }
+    }
+    &#sharable-btn {
+      &:hover {
+        background-color: rgba(91, 114, 155, 0.5);
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+        }
+      }
+      &.active {
+        background-color: #5b729b;
+        transition: background-color 0.2s ease;
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+          .filter-icon-circle {
+            background-color: #5b729b;
+          }
+        }
+      }
+    }
+    &#podcast-btn {
+      &:hover {
+        background-color: rgba(155, 91, 114, 0.5);
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+        }
+      }
+      &.active {
+        background-color: #9b5b72;
+        transition: background-color 0.2s ease;
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+          .filter-icon-circle {
+            background-color: #9b5b72;
+          }
+        }
+      }
+    }
+    &#download-btn {
+      margin-right: 0;
+      &:hover {
+        background-color: rgba(63, 63, 63, 0.5);
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+        }
+      }
+      &.active {
+        background-color: #3f3f3f;
+        transition: background-color 0.2s ease;
+        @media (max-width: $medium-width) {
+          background-color: #fff;
+          .filter-icon-circle {
+            background-color: #3f3f3f;
+          }
+        }
+      }
+    }
+  }
+  .filter-icon-circle {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    @media (max-width: $medium-width) {
+      position: absolute;
+      border: 1px solid #fff;
+    }
+  }
+  .filter-icon {
+    &.video-filter {
+      background: url("../img/filter-video.svg") center no-repeat;
+      background-size: contain;
+      width: 23px;
+      height: 24px;
+    }
+    &.article-filter {
+      background: url("../img/filter-reading.svg") center no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+    }
+    &.sharable-filter {
+      background: url("../img/filter-sharable.svg") center no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 22px;
+    }
+    &.podcast-filter {
+      background: url("../img/filter-mic.svg") center no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 19px;
+    }
+    &.download-filter {
+      background: url("../img/filter-download.svg") center no-repeat;
+      background-size: contain;
+      width: 19px;
+      height: 17px;
+    }
+    &.filter-filter {
+      background: url("../img/filters.svg") center no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      display: none;
+      @media (max-width: $medium-width) {
+        display: block;
+      }
+    }
+  }
+  .filter-title {
+    font-size: 17px;
+    line-height: 22px;
+    margin: 20px 0 20px;
+    letter-spacing: -0.08em;
+    user-select: none;
+    @media (max-width: $medium-width) {
+      padding-left: 82px;
+    }
+  }
+  .filter-count {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #000;
+    user-select: none;
+    @media (max-width: 659px) {
+      font-size: 4.25vw;
+      line-height: 5vw;
+    }
+    @media (max-width: $medium-width) {
+      font-size: 20px;
+      position: absolute;
+      right: 19px;
+      line-height: 60px;
+      top: 3px;
+      padding-left: 30px;
+      border-left: 1px solid #ededed;
+    }
+  }
+}
+
+.faithcounts-podcast-player {
+  margin: 62px 0 56px;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}

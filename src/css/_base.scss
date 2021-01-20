@@ -1,0 +1,233 @@
+strong,
+.strong {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: $full-width;
+  box-sizing: border-box;
+  padding: 0 40px;
+
+  @media (max-width: $large-width) {
+    padding: 0 3.912vw;
+  }
+  @media (max-width: $medium-width) {
+    padding: 0 2vw;
+  }
+  @media (max-width: $xsmall-width) {
+    padding: 0 10px;
+  }
+  @media (max-width: $medium-width) {
+    &.small-no-pad {
+      padding: 0;
+    }
+  }
+  &.twelvefifty {
+    padding: 0 10%;
+    @media (max-width: $medium-width) {
+      padding: 0 20px;
+    }
+  }
+  &.thirteenseventyfive {
+    max-width: 1375px;
+  }
+  &.fixed-container {
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    @media (max-width: $medium-width) {
+      left: auto;
+      transform: translateX(0);
+      top: auto;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0);
+      bottom: 0;
+      transition: all 0.2s ease;
+      &.mobile-clicked {
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+.left-align {
+  text-align: left;
+}
+
+.clearfix {
+  clear: both;
+  width: 0;
+}
+
+p {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 26px;
+  @media (max-width: $medium-width) {
+    font-size: 16px;
+  }
+  @media (max-width: $medium-width) {
+    font-size: 15px;
+  }
+}
+
+main {
+  padding-top: 71px;
+  @media (max-width: $medium-width) {
+    padding-top: 42px;
+  }
+}
+
+.main-page-title {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 100;
+  margin-bottom: 3px;
+  margin-top: 27px;
+}
+
+.page-topic-header {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid #979797;
+  margin: 7% 0 4%;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.portrait-subitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  padding-top: 50px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  margin-bottom: 1em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  span {
+    font-size: 36px;
+  }
+  @media (max-width: $large-width) {
+    font-size: 7.208vw;
+    line-height: 8.2vw;
+    margin-bottom: 2.17%;
+  }
+  @media (max-width: $medium-width) {
+    font-size: 7vw;
+    line-height: 8vw;
+    max-width: 58.75vw;
+    margin: 1vw auto 3.25vw;
+  }
+  @media (max-width: $xsmall-width) {
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 235px;
+    margin: 4px auto 13px;
+  }
+}
+.narrow-container {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  @media (min-width: $full-width-up) {
+    margin-bottom: 63px;
+  }
+  @media (max-width: $full-width) {
+    margin-bottom: 4vw;
+  }
+  @media (max-width: $large-width) {
+    max-width: 100%;
+    padding: 0 3.912vw;
+  }
+  @media (max-width: $medium-width) {
+    padding: 0 3.912vw;
+  }
+  @media (max-width: $xsmall-width) {
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    margin: 0 0 11px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 11px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 11px;
+  }
+  h5 {
+    font-weight: bold;
+    margin: 0 0 11px;
+  }
+  h5 {
+    font-weight: 500;
+    margin: 0 0 11px;
+  }
+  p {
+    line-height: 28px;
+    &.section-callout {
+      font-size: 34px;
+      line-height: 41px;
+      font-weight: 300;
+      border-top: 1px solid #979797;
+      border-bottom: 1px solid #979797;
+      padding: 15px 0;
+      text-align: center;
+      margin: 41px 0 33px;
+      letter-spacing: -1px;
+    }
+  }
+  img {
+    margin-bottom: 25px;
+    max-width: 100%;
+    height: auto;
+  }
+  .wp-block-image {
+    margin-bottom: 25px;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  figcaption {
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+  }
+  strong {
+    font-weight: 700;
+  }
+}

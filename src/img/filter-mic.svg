@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="19px" viewBox="0 0 13 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>0716-mic</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/mic" transform="translate(-6.000000, -3.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="0716-mic" transform="translate(6.000000, 3.000000)">
+                <path d="M6.5,13 C4.57,13 3,11.43 3,9.5 L3,3.5 C3,1.57 4.57,0 6.5,0 C8.43,0 10,1.57 10,3.5 L10,9.5 C10,11.43 8.43,13 6.5,13 Z M6.5,1 C5.122,1 4,2.122 4,3.5 L4,9.5 C4,10.878 5.122,12 6.5,12 C7.878,12 9,10.878 9,9.5 L9,3.5 C9,2.122 7.878,1 6.5,1 Z" id="Shape"></path>
+                <path d="M13,9.5 C13,9.224 12.776,9 12.5,9 C12.224,9 12,9.224 12,9.5 C12,12.533 9.533,15 6.5,15 C3.467,15 1,12.533 1,9.5 C1,9.224 0.776,9 0.5,9 C0.224,9 0,9.224 0,9.5 C0,12.916 2.649,15.725 6,15.981 L6,18 L4.5,18 C4.224,18 4,18.224 4,18.5 C4,18.776 4.224,19 4.5,19 L8.5,19 C8.776,19 9,18.776 9,18.5 C9,18.224 8.776,18 8.5,18 L7,18 L7,15.981 C10.351,15.725 13,12.916 13,9.5 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

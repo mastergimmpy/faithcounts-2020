@@ -1,0 +1,33 @@
+.faithcounts-video-hero-block {
+  #video-hero {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 31px 0 29px;
+    position: relative;
+    display: block;
+    .spacer {
+      padding-top: 56.73%;
+    }
+    &:after {
+      content: "";
+      width: 178px;
+      height: 178px;
+      background-image: url("../img/play-btn.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -89px;
+      margin-left: -89px;
+    }
+  }
+}
+#popup-body {
+  main {
+    padding: 0;
+  }
+}

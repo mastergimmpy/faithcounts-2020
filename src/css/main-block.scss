@@ -1,0 +1,100 @@
+/* this is for the editor styling of blocks. Any styling that isn't specific
+  to a block should be imported here. All block-specific styling should be included
+  in the _blocks.scss file. Most likely, very little changes, if any, need to be
+  made to this file. */
+
+/* block and non-block styling */
+@import "_vars.scss";
+@import "_fonts.scss";
+@import "_base.scss";
+
+/* blocks */
+@import "_blocks.scss";
+
+/* below are overrides and wordpress specific code to help blocks work better in the editor */
+.wp-block {
+  max-width: 1440px;
+}
+.wp-block[data-align="wide"] {
+  max-width: 1440px;
+}
+.acf-block-preview {
+  font: 400 16px/21px $fnt_mont;
+}
+.container {
+  div,
+  span,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  abbr,
+  address,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  samp,
+  small,
+  strong,
+  sub,
+  sup,
+  var,
+  b,
+  i,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+}

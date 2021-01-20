@@ -1,0 +1,129 @@
+{
+    "key": "group_5e90c840965c5",
+    "title": "Custom View All",
+    "fields": [
+        {
+            "key": "field_5e90c865eb37c",
+            "label": "Customize View All Button",
+            "name": "customize_view_all_button",
+            "type": "true_false",
+            "instructions": "To override (or add) a view all button at the end of the swim lane check this and fill out the information about the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e90c89beb37d",
+            "label": "Link",
+            "name": "view_all_link",
+            "type": "url",
+            "instructions": "Indicate where the View All Button should take the user when they click on it.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e90c865eb37c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e90c8bceb37e",
+            "label": "Label",
+            "name": "view_all_label",
+            "type": "text",
+            "instructions": "Indicate the text that should appear on the view all button (defaults to \"View All\")",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e90c865eb37c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "View All",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-post-slide-block"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-series-slide-block"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-sharables-slide-block"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-resources-slide-block"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-myfaith-slide-block"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-portrait-slide-block"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1586547004
+}

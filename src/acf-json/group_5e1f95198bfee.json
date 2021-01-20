@@ -1,0 +1,249 @@
+{
+    "key": "group_5e1f95198bfee",
+    "title": "Post Swim Lane Block",
+    "fields": [
+        {
+            "key": "field_5e1f953c4756c",
+            "label": "Section Title",
+            "name": "section_title",
+            "type": "text",
+            "instructions": "This title will display above the swim lane",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2a91c8bd5c3",
+            "label": "Show in Swim Lane",
+            "name": "show_in_swim_lane",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "custom": "Custom",
+                "popular": "Popular by Type",
+                "latest": "Latest by Type",
+                "category": "Latest by Category and Type(s)",
+                "popCat" : "Popular by Category and Type(s)"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e1f95864756e",
+            "label": "Swim Lane Slides",
+            "name": "swim_lane_slides",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 15,
+            "layout": "table",
+            "button_label": "Add Slide",
+            "sub_fields": [
+                {
+                    "key": "field_5e1f95a64756f",
+                    "label": "Swim Lane Slide",
+                    "name": "swim_lane_slide",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "videos",
+                        "podcasts",
+                        "post",
+                        "sharables",
+                        "downloads"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5e2a929fbd5c4",
+            "label": "Type to Show",
+            "name": "type_to_show",
+            "type": "select",
+            "instructions": "Select the type of items to show in the swim lane",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "popular"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "latest"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "popCat"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "Articles",
+                "downloads": "Downloads",
+                "podcasts": "Podcasts",
+                "sharables": "Sharables",
+                "videos": "Videos"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e2a936fbd5c6",
+            "label": "Category",
+            "name": "category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "category"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "popCat"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5e2a93c7bd5c7",
+            "label": "Types to Show",
+            "name": "types_to_show",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e2a91c8bd5c3",
+                        "operator": "==",
+                        "value": "category"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "Articles",
+                "downloads": "Downloads",
+                "podcasts": "Podcasts",
+                "sharables": "Sharables",
+                "videos": "Videos"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-post-slide-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1579852258
+}

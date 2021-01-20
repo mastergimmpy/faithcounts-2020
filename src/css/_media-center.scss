@@ -1,0 +1,102 @@
+.fc-icon-text-block {
+  margin-bottom: 30px;
+  font-family: $fnt_mont;
+  @media (max-width: 850px) {
+    margin-top: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+  #mediaSlider {
+    display: flex;
+    @media (max-width: $full-width) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (min-width: 851px) {
+      justify-content: center;
+    }
+    @media (max-width: 850px) {
+      padding-left: 3.912vw;
+      padding-right: 3.912vw;
+    }
+  }
+  .icon-text-block {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    margin-right: 4.333%;
+    margin-bottom: 4.5%;
+    padding: 4px 19px 30px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    &:hover {
+      box-shadow: 0 0 10px #979797;
+      transition: all 0.2s ease;
+    }
+    @media (max-width: $full-width) {
+      margin-right: 0;
+    }
+    @media (max-width: 1100px) {
+      width: 40%;
+    }
+    @media (max-width: 850px) {
+      box-shadow: 0 0 10px #979797;
+      margin-right: 20px;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: $full-width-up) {
+      padding-left: 144px;
+      padding-right: 144px;
+    }
+    @media (max-width: 850px) {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding-top: 10px;
+    }
+  }
+  .icon-image {
+    margin-top: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    max-width: 100%;
+  }
+  .slide-name {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    @media (max-width: 850px) {
+      font-size: 3.3vw;
+      line-height: 4.2vw;
+    }
+    @media (max-width: $xsmall-width) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+  .slide-description {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    text-align: left;
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+  .text-position {
+    margin-top: 43px;
+    box-sizing: border-box;
+  }
+}

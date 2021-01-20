@@ -1,0 +1,14 @@
+working
+dist
+node_modules
+nbproject
+.DS_Store
+*.mp4
+*.log
+.env
+.cache
+*.db
+src/img/content
+product.json
+src/img/exported
+src/acf_starter

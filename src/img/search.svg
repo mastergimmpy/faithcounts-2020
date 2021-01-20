@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>0803-magnifier</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Home" transform="translate(-1388.000000, -25.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="0803-magnifier" transform="translate(1388.000000, 25.000000)">
+                    <path d="M18.869,19.162 L12.926,12.678 C14.265,11.277 15.001,9.445 15.001,7.5 C15.001,5.497 14.221,3.613 12.804,2.197 C11.387,0.781 9.504,-8.8817842e-16 7.501,-8.8817842e-16 C5.498,-8.8817842e-16 3.614,0.78 2.198,2.197 C0.782,3.614 0.001,5.497 0.001,7.5 C0.001,9.503 0.781,11.387 2.198,12.803 C3.615,14.219 5.498,15 7.501,15 C9.227,15 10.863,14.421 12.189,13.355 L18.132,19.838 C18.231,19.946 18.365,20 18.501,20 C18.622,20 18.743,19.957 18.839,19.869 C19.043,19.682 19.056,19.366 18.87,19.163 L18.869,19.162 Z M1,7.5 C1,3.916 3.916,1 7.5,1 C11.084,1 14,3.916 14,7.5 C14,11.084 11.084,14 7.5,14 C3.916,14 1,11.084 1,7.5 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

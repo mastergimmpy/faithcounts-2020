@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="17px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>0758-download2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/downloads" transform="translate(-3.000000, -4.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="0758-download2" transform="translate(3.000000, 4.000000)">
+                <path d="M14.853,7.647 C14.658,7.452 14.341,7.452 14.146,7.647 L10,11.793 L10,0.5 C10,0.224 9.776,0 9.5,0 C9.224,0 9,0.224 9,0.5 L9,11.793 L4.854,7.647 C4.659,7.452 4.342,7.452 4.147,7.647 C3.952,7.842 3.952,8.159 4.147,8.354 L9.147,13.354 C9.245,13.452 9.373,13.5 9.501,13.5 C9.629,13.5 9.757,13.451 9.855,13.353 L14.855,8.353 C15.05,8.158 15.05,7.841 14.855,7.646 L14.853,7.647 Z" id="Path"></path>
+                <path d="M17.5,17 L1.5,17 C0.673,17 0,16.327 0,15.5 L0,13.5 C0,13.224 0.224,13 0.5,13 C0.776,13 1,13.224 1,13.5 L1,15.5 C1,15.776 1.224,16 1.5,16 L17.5,16 C17.776,16 18,15.776 18,15.5 L18,13.5 C18,13.224 18.224,13 18.5,13 C18.776,13 19,13.224 19,13.5 L19,15.5 C19,16.327 18.327,17 17.5,17 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

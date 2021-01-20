@@ -1,0 +1,41 @@
+{
+    "key": "group_5e2ac7f5aeaf1",
+    "title": "Contact Info Block",
+    "fields": [
+        {
+            "key": "field_5e2ac7fbe347d",
+            "label": "Contact Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To edit the contact information click on Contact Info in the left navigation near the bottom.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fc-contact-cta-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1579862058
+}

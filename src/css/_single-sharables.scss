@@ -1,0 +1,15 @@
+#sharable-player {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .description {
+    font-size: 0;
+    height: 0;
+  }
+}

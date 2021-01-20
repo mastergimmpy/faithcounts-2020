@@ -1,0 +1,91 @@
+{
+    "key": "group_5e13bff049c98",
+    "title": "Videos",
+    "fields": [
+        {
+            "key": "field_5e13c009ca857",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "This should be 411x200 pixels in dimension. This will appear in search results or swim lanes for the user to click on to view the video.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 1,
+            "edit_in_rest": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e13c088ca858",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "This is content primarily for SEO (search engine optimization) purposes to help the video pages be identified and indexed by search engines as unique content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 1,
+            "edit_in_rest": 1,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5e13c0e5ca859",
+            "label": "Video URL",
+            "name": "video_url",
+            "type": "url",
+            "instructions": "This should be a URL to a Youtube or Vimeo video. It does not need to be a special embed link. If the URL is a valid Youtube or Vimeo video the system will process it as needed to show the video properly.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 1,
+            "edit_in_rest": 1,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "videos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1579560784
+}
